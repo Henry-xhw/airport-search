@@ -1,0 +1,19 @@
+spring:
+  main:
+    banner-mode: console
+    allow-bean-definition-overriding: true
+
+server:
+  port: 8273
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: false
+  server:
+    port: 9090
+
